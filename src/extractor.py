@@ -1,7 +1,6 @@
 import os
 import warnings
 import yaml
-import torch
 from pypdf import PdfReader
 from transformers import pipeline
 
