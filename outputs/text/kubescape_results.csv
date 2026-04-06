@@ -1,0 +1,49 @@
+FilePath,Severity,Control name,Failed resources,All Resources,Compliance score
+project-yamls/YAMLfiles,failed,Prevent containers from allowing command execution,N/A,N/A,93.27146
+project-yamls/YAMLfiles,failed,Roles with delete capabilities,N/A,N/A,79.58237
+project-yamls/YAMLfiles,failed,Applications credentials in configuration files,N/A,N/A,92.028984
+project-yamls/YAMLfiles,failed,Non-root containers,N/A,N/A,1.5584415
+project-yamls/YAMLfiles,passed,Access Kubernetes dashboard,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,List Kubernetes secrets,N/A,N/A,77.37819
+project-yamls/YAMLfiles,failed,Allow privilege escalation,N/A,N/A,26.683939
+project-yamls/YAMLfiles,failed,Immutable container filesystem,N/A,N/A,21.038961
+project-yamls/YAMLfiles,failed,Configured readiness probe,N/A,N/A,23.636364
+project-yamls/YAMLfiles,passed,Mount service principal,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Ingress and Egress blocked,N/A,N/A,19.905214
+project-yamls/YAMLfiles,failed,Delete Kubernetes events,N/A,N/A,93.65427
+project-yamls/YAMLfiles,failed,Automatic mapping of service account,N/A,N/A,76.68308
+project-yamls/YAMLfiles,failed,Administrative Roles,N/A,N/A,97.67981
+project-yamls/YAMLfiles,failed,Host PID/IPC privileges,N/A,N/A,97.402596
+project-yamls/YAMLfiles,failed,HostNetwork access,N/A,N/A,96.88312
+project-yamls/YAMLfiles,passed,SSH server running inside container,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Container hostPort,N/A,N/A,98.96104
+project-yamls/YAMLfiles,failed,Writable hostPath mount,N/A,N/A,95.844154
+project-yamls/YAMLfiles,failed,Insecure capabilities,N/A,N/A,97.92208
+project-yamls/YAMLfiles,failed,HostPath mount,N/A,N/A,95.32468
+project-yamls/YAMLfiles,failed,Network mapping,N/A,N/A,0.0
+project-yamls/YAMLfiles,failed,Access container service account,N/A,N/A,0.15384616
+project-yamls/YAMLfiles,failed,Cluster internal networking,N/A,N/A,0.0
+project-yamls/YAMLfiles,failed,Linux hardening,N/A,N/A,20.77922
+project-yamls/YAMLfiles,failed,Configured liveness probe,N/A,N/A,22.337662
+project-yamls/YAMLfiles,failed,Privileged container,N/A,N/A,95.32468
+project-yamls/YAMLfiles,passed,CVE-2021-25742-nginx-ingress-snippet-annotation-vulnerability,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Pods in default namespace,N/A,N/A,50.90909
+project-yamls/YAMLfiles,passed,Sudo in container entrypoint,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Portforwarding privileges,N/A,N/A,96.51972
+project-yamls/YAMLfiles,failed,No impersonation,N/A,N/A,97.563805
+project-yamls/YAMLfiles,passed,PSP enabled,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Naked pods,N/A,N/A,0.0
+project-yamls/YAMLfiles,passed,Container runtime socket mounted,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Image pull policy on latest tag,N/A,N/A,92.20779
+project-yamls/YAMLfiles,failed,Label usage for resources,N/A,N/A,31.16883
+project-yamls/YAMLfiles,failed,K8s common labels usage,N/A,N/A,23.896105
+project-yamls/YAMLfiles,skipped,Images from allowed registry,N/A,N/A,0.0
+project-yamls/YAMLfiles,passed,CVE-2022-24348-argocddirtraversal,N/A,N/A,100.0
+project-yamls/YAMLfiles,passed,CVE-2022-39328-grafana-auth-bypass,N/A,N/A,100.0
+project-yamls/YAMLfiles,passed,CVE-2022-47633-kyverno-signature-bypass,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Prefer using secrets as files over secrets as environment variables,N/A,N/A,96.88312
+project-yamls/YAMLfiles,passed,Workload with PVC access,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Missing network policy,N/A,N/A,42.6146
+project-yamls/YAMLfiles,passed,Anonymous access enabled,N/A,N/A,100.0
+project-yamls/YAMLfiles,failed,Ensure CPU limits are set,N/A,N/A,18.701298
+project-yamls/YAMLfiles,failed,Ensure memory limits are set,N/A,N/A,18.961039

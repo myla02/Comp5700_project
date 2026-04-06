@@ -1,0 +1,472 @@
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+You are a helpful document analyzer and security requirements analyst.
+
+Read the following security requirements document and identify the key data elements (KDEs).
+A key data element can map to multiple requirements.
+
+Extract at least 3 to 5 key data elements and their corresponding requirements.
+
+Return only valid YAML in this exact format:
+
+element1:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+    - <requirement 2>
+
+element2:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+
+Do not include explanations.
+Do not include markdown code fences.
+
+Document name: cis-r1.pdf
+
+Document text:
+CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022   
+Page 1 
+Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+Page 2 
+Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Intended Audience ................................................................................................................... 5 Consensus Guidance .............................................................................................................. 6 Typographical Conventions .................................................................................................... 7 Recommendation Definitions ....................................................................................... 8 Title ............................................................................................................................................ 8 Assessment Status .................................................................................................................. 8 Automated ............................................................................................................................................. 8 Manual .................................................................................................................................................... 8 Profile ........................................................................................................................................ 8 Description ............................................................................................................................... 8 Rationale Statement ................................................................................................................. 8 Impact Statement ..................................................................................................................... 9 Audit Procedure ....................................................................................................................... 9 Remediation Procedure ........................................................................................................... 9 Default Value ............................................................................................................................ 9 References ................................................................................................................................ 9 CIS Critical Security Controls® (CIS Controls®) .................................................................... 9
+
+*Prompt Type*
+zero-shot
+
+*LLM Output*
+element1: "CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0"
+requirements:
+  - "Ensure the system is compliant with CIS Critical Security Controls (CIS Controls) for EKS."
+  - "Validate the configuration of Kubernetes pods and nodes against CIS Best Practices."
+  - "Implement and maintain automated security monitoring and alerting for EKS clusters."
+
+element2: "Terms of Use"
+requirements:
+  - "Access the current Terms of Use at the provided link."
+
+
+============================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+You are a helpful document analyzer and security requirements analyst.
+
+Example:
+
+Document text:
+Users must provide a username and password. Passwords must be encrypted at rest.
+
+Expected YAML output:
+element1:
+  name: username
+  requirements:
+    - Users must provide a username.
+element2:
+  name: password
+  requirements:
+    - Users must provide a password.
+    - Passwords must be encrypted at rest.
+
+Now read the following security requirements document and identify the key data elements (KDEs).
+A key data element can map to multiple requirements.
+
+Extract at least 3 to 5 key data elements and their corresponding requirements.
+
+Return only valid YAML in this exact format:
+
+element1:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+    - <requirement 2>
+
+element2:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+
+Do not include explanations.
+Do not include markdown code fences.
+
+Document name: cis-r1.pdf
+
+Document text:
+CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022   
+Page 1 
+Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+Page 2 
+Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Intended Audience ................................................................................................................... 5 Consensus Guidance .............................................................................................................. 6 Typographical Conventions .................................................................................................... 7 Recommendation Definitions ....................................................................................... 8 Title ............................................................................................................................................ 8 Assessment Status .................................................................................................................. 8 Automated ............................................................................................................................................. 8 Manual .................................................................................................................................................... 8 Profile ........................................................................................................................................ 8 Description ............................................................................................................................... 8 Rationale Statement ................................................................................................................. 8 Impact Statement ..................................................................................................................... 9 Audit Procedure ....................................................................................................................... 9 Remediation Procedure ........................................................................................................... 9 Default Value ............................................................................................................................ 9 References ................................................................................................................................ 9 CIS Critical Security Controls® (CIS Controls®) .................................................................... 9
+
+*Prompt Type*
+few-shot
+
+*LLM Output*
+element1:
+  name: Terms of Use
+  requirements:
+    - See the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/
+
+element2:
+  name: Table of Contents
+  requirements:
+    - Table of Contents
+
+
+============================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+You are a helpful document analyzer and security requirements analyst.
+
+Carefully analyze the document.
+First identify important data-related nouns, entities, fields, and configuration items.
+Then determine which of them are key data elements (KDEs).
+Then map each KDE to all related requirements found in the document.
+
+Extract at least 3 to 5 key data elements and their corresponding requirements.
+
+Return only the final YAML answer in this exact format:
+
+element1:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+    - <requirement 2>
+
+element2:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+
+Do not include explanations.
+Do not include markdown code fences.
+
+Document name: cis-r1.pdf
+
+Document text:
+CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022   
+Page 1 
+Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+Page 2 
+Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Intended Audience ................................................................................................................... 5 Consensus Guidance .............................................................................................................. 6 Typographical Conventions .................................................................................................... 7 Recommendation Definitions ....................................................................................... 8 Title ............................................................................................................................................ 8 Assessment Status .................................................................................................................. 8 Automated ............................................................................................................................................. 8 Manual .................................................................................................................................................... 8 Profile ........................................................................................................................................ 8 Description ............................................................................................................................... 8 Rationale Statement ................................................................................................................. 8 Impact Statement ..................................................................................................................... 9 Audit Procedure ....................................................................................................................... 9 Remediation Procedure ........................................................................................................... 9 Default Value ............................................................................................................................ 9 References ................................................................................................................................ 9 CIS Critical Security Controls® (CIS Controls®) .................................................................... 9
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+element1:
+  name: CIS Critical Security Controls®
+  requirements:
+    - CIS Control 1.1:  Secure network access
+    - CIS Control 2.1:  Secure container images
+    - CIS Control 3.1:  Secure container registries
+    - CIS Control 4.1:  Secure Kubernetes API server
+    - CIS Control 5.1:  Secure Kubernetes cluster
+    - CIS Control 6.1:  Secure Kubernetes network
+    - CIS Control 7.1:  Secure Kubernetes secrets
+    - CIS Control 8.1:  Secure Kubernetes access
+
+element2:
+  name: Kubernetes API Server
+  requirements:
+    -  API server configuration must adhere to CIS Control 3.1
+    -  API server access controls must be defined and enforced
+    -  API server security audits must be performed regularly
+    -  API server vulnerability scanning must be performed
+    -  API server access logs must be monitored for suspicious activity
+
+
+============================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+You are a helpful document analyzer and security requirements analyst.
+
+Read the following security requirements document and identify the key data elements (KDEs).
+A key data element can map to multiple requirements.
+
+Extract at least 3 to 5 key data elements and their corresponding requirements.
+
+Return only valid YAML in this exact format:
+
+element1:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+    - <requirement 2>
+
+element2:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+
+Do not include explanations.
+Do not include markdown code fences.
+
+Document name: cis-r2.pdf
+
+Document text:
+Internal Only - General 
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+  
+Page 1 
+Internal Only - General 
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General 
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+*Prompt Type*
+zero-shot
+
+*LLM Output*
+element1:
+  name: CIS Benchmarks
+  requirements:
+    - Reference the below link for current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use
+    - Never host CIS Benchmarks on 3rd party sites.
+element2:
+  name: CIS Legal
+  requirements:
+    - Contact CIS Legal (CISLegal@cisecurity.org) for copyright usage guidance.
+
+============================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+You are a helpful document analyzer and security requirements analyst.
+
+Example:
+
+Document text:
+Users must provide a username and password. Passwords must be encrypted at rest.
+
+Expected YAML output:
+element1:
+  name: username
+  requirements:
+    - Users must provide a username.
+element2:
+  name: password
+  requirements:
+    - Users must provide a password.
+    - Passwords must be encrypted at rest.
+
+Now read the following security requirements document and identify the key data elements (KDEs).
+A key data element can map to multiple requirements.
+
+Extract at least 3 to 5 key data elements and their corresponding requirements.
+
+Return only valid YAML in this exact format:
+
+element1:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+    - <requirement 2>
+
+element2:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+
+Do not include explanations.
+Do not include markdown code fences.
+
+Document name: cis-r2.pdf
+
+Document text:
+Internal Only - General 
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+  
+Page 1 
+Internal Only - General 
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General 
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+*Prompt Type*
+few-shot
+
+*LLM Output*
+element1:
+  name: Terms of Use
+  requirements:
+    - Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/
+element2:
+  name: CIS Benchmarks
+  requirements:
+    - It is NEVER acceptable to host a CIS Benchmark in any format (PDF, etc.) on a 3rd party (non-CIS owned) site.
+
+============================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+
+*Prompt Used*
+You are a helpful document analyzer and security requirements analyst.
+
+Carefully analyze the document.
+First identify important data-related nouns, entities, fields, and configuration items.
+Then determine which of them are key data elements (KDEs).
+Then map each KDE to all related requirements found in the document.
+
+Extract at least 3 to 5 key data elements and their corresponding requirements.
+
+Return only the final YAML answer in this exact format:
+
+element1:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+    - <requirement 2>
+
+element2:
+  name: <KDE name>
+  requirements:
+    - <requirement 1>
+
+Do not include explanations.
+Do not include markdown code fences.
+
+Document name: cis-r2.pdf
+
+Document text:
+Internal Only - General 
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark 
+v1.6.0 - 12-23-2024 
+  
+Page 1 
+Internal Only - General 
+Terms of Use 
+Please see the below link for our current terms of use: 
+https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org) and request guidance on copyright usage.  
+NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) 
+on a 3rd party (non-CIS owned) site. 
+Page 2 
+Internal Only - General 
+Table of Contents 
+Terms of Use ..................................................................................................................... 1 
+Table of Contents ............................................................................................................. 2 
+Overview ............................................................................................................................ 5 
+Important Usage Information .................................................................................................... 5 
+Key Stakeholders.................................................................................................................................... 5 
+Apply the Correct Version of a Benchmark ......................................................................................... 6 
+Exceptions ............................................................................................................................................... 6 
+Remediation ............................................................................................................................................ 7 
+Summary.................................................................................................................................................. 7 
+Target Technology Details ........................................................................................................ 8 
+Intended Audience ..................................................................................................................... 8 
+Consensus Guidance ................................................................................................................. 9 
+Typographical Conventions .................................................................................................... 10 
+Recommendation Definitions ....................................................................................... 11 
+Title ............................................................................................................................................. 11 
+Assessment Status .................................................................................................................. 11 
+Automated ............................................
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+element1:
+  name: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.6.0
+  requirements:
+    - Terms of Use
+    - Table of Contents
+    - Key Stakeholders
+    - Apply the Correct Version of a Benchmark
+    - Exceptions
+    - Remediation
+    - Summary
+    - Target Technology Details
+    - Intended Audience
+    - Consensus Guidance
+    - Typographical Conventions
+    - Recommendation Definitions
+    - Title
+    - Assessment Status
+    - Automated
+
+element2:
+  name: Terms of Use
+  requirements:
+    - Terms of Use
+
+
+============================================================
+

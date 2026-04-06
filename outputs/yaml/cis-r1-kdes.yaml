@@ -1,0 +1,9 @@
+element1: "CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0"
+requirements:
+  - "Ensure the system is compliant with CIS Critical Security Controls (CIS Controls) for EKS."
+  - "Validate the configuration of Kubernetes pods and nodes against CIS Best Practices."
+  - "Implement and maintain automated security monitoring and alerting for EKS clusters."
+
+element2: "Terms of Use"
+requirements:
+  - "Access the current Terms of Use at the provided link."

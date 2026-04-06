@@ -1,0 +1,9 @@
+element1:
+  name: CIS Benchmarks
+  requirements:
+    - Reference the below link for current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use
+    - Never host CIS Benchmarks on 3rd party sites.
+element2:
+  name: CIS Legal
+  requirements:
+    - Contact CIS Legal (CISLegal@cisecurity.org) for copyright usage guidance.

@@ -1,0 +1,14 @@
+*LLM Name*
+test
+
+*Prompt Used*
+prompt
+
+*Prompt Type*
+zero-shot
+
+*LLM Output*
+output
+
+============================================================
+
