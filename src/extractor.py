@@ -2,7 +2,7 @@ import os
 import warnings
 import yaml
 from pypdf import PdfReader
-from transformers import pipeline
+
 
 
 def load_and_validate_documents(pdf1_path, pdf2_path):
